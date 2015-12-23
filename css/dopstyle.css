@@ -1,0 +1,110 @@
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.btn:focus {
+    outline: 1px solid transparent;
+}
+/* {
+  border: 1px solid;
+}*/
+/* Fade Slider CSS */
+
+.carousel-inner .item img,
+.carousel-inner .item a img {
+  width: auto;
+  max-height: 500px;
+  max-width: 1000%;
+}
+
+.carousel .item {
+  -webkit-transition: 0.7s ease-in-out opacity;
+  -moz-transition: 0.7s ease-in-out opacity;
+  -o-transition: 0.7s ease-in-out opacity;
+  transition: 0.7s ease-in-out opacity;
+  left: 0 !important;
+}
+
+.carousel .left,
+.carousel .right {
+  -webkit-transition: 0.3s ease-in-out opacity;
+  -moz-transition: 0.3s ease-in-out opacity;
+  -o-transition: 0.3s ease-in-out opacity;
+  transition: 0.3s ease-in-out opacity;
+}
+
+.carousel .next.left,
+.carousel .prev.right {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel .active.left,
+.carousel .active.right {
+  opacity: 0;
+  z-index: 2;
+}
+
+.carousel .carousel-control {
+  z-index: 1;
+  outline: none;
+}
+
+/* Лучше использовать конкретный стиль, например btn-social-icon */
+.btn-social-icon {
+  border-radius: 100px;
+  font-size: 25pt;
+}
+
+.btn-lg
+{
+  border-radius: 20px;
+}
+
+/* Это для кнопки в слайдере */
+.btn-slider {
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.sign-up {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sign-up .btn-lg {
+  margin-top: 15px;
+}
+
+footer {
+  /*background: #222222;*/
+  /*height: 100%;*/
+  margin: 20px 0;
+}
+
+.featurette-divider {
+   margin: 60px 0;
+}
+
+/*Я не знаю как должно выглядить это, скрытый текст) Сделал так пока*/
+
+#hide_text {
+  height: 212px;
+  overflow: hidden;
+  box-shadow: inset 0 -23px 15px -9px rgba(0,0,255,.3);/*rgba(0,0,255,.3)*/
+  -webkit-webkit-transition: all .5s linear;
+  -moz-webkit-transition: all .5s linear;
+  -ms-webkit-transition: all .5s linear;
+  -o-webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+#hide_text:hover {
+  height: 380px;
+  box-shadow: none;
+}
+
+sup {
+  font: 12px sans-serif;
+  color: silver;
+}
