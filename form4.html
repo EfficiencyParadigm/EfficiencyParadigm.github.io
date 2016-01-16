@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Форма заявки</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <form id="subscribe-form" action="https://para-effect.bitrix24.ru/crm/configs/import/lead.php" method="post">
+        <input type="hidden" name="AUTH" value="a65921da7339a7411f3997df8609a94d" />
+        <input type="hidden" name="TITLE" value="API" />
+        Адрес электронной почты:
+        <input type="text" name="EMAIL_OTHER" value="" />
+    </form>
+    <script type="text/javascript">
+        $('input[name="EMAIL_OTHER"]').keypress(function(e) {
+            if (e.which == 13) {
+                var form = $('#subscribe-form');
+                $.ajax({
+                    data: form.serialize(),
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    error: function(xhr, desc, err) {
+                        var result = JSON.parse(xhr.responseText.replace(/'/g, '"'));
+                        window.location.href = result.error == "201" ? "form4.1.html" : "form4.0.html";
+                    }
+                });
+                return false;
+            }
+        });
+    </script>
+</body>
+
+</html>

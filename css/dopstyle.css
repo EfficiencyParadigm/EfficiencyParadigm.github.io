@@ -9,6 +9,7 @@
 /* {
   border: 1px solid;
 }*/
+
 /* Fade Slider CSS */
 
 .carousel-inner .item img,
@@ -51,15 +52,22 @@
   outline: none;
 }
 
+/*.container {*/
+/*    background-image: -webkit-gradient(linear, 100% 100%, 0 0, from(#3399B7), to(#fff));*/
+/*    background-image: -webkit-linear-gradient(to left, #646464 0%, #fff 100%);*/
+/*    background-image: -moz-linear-gradient(to left, #646464 0%, #fff 100%);*/
+/*    background-image: -o-linear-gradient(to left, #646464 0%, #fff 100%);*/
+/*    background-image: linear-gradient(to left, #000 50%, #fff 50%);*/
+/*}*/
+
 /* Лучше использовать конкретный стиль, например btn-social-icon */
 .btn-social-icon {
   border-radius: 100px;
   font-size: 25pt;
 }
 
-.btn-lg
-{
-  border-radius: 20px;
+.btn-lg {
+  border-radius: 50px;
 }
 
 /* Это для кнопки в слайдере */
@@ -73,13 +81,11 @@
   text-align: center;
 }
 
-.sign-up .btn-lg {
+.sign-up form {
   margin-top: 15px;
 }
 
 footer {
-  /*background: #222222;*/
-  /*height: 100%;*/
   margin: 20px 0;
 }
 
@@ -90,21 +96,50 @@ footer {
 /*Я не знаю как должно выглядить это, скрытый текст) Сделал так пока*/
 
 #hide_text {
-  height: 212px;
+  height: 200px;
   overflow: hidden;
-  box-shadow: inset 0 -23px 15px -9px rgba(0,0,255,.3);/*rgba(0,0,255,.3)*/
-  -webkit-webkit-transition: all .5s linear;
-  -moz-webkit-transition: all .5s linear;
-  -ms-webkit-transition: all .5s linear;
-  -o-webkit-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
   transition: all .5s linear;
+  position: relative;
 }
+
+#hide_text:after {
+  position: absolute;
+  content: "";
+  /*border: 1px solid red;*/
+  bottom: 0; left: 0; right: 0;
+  height: 30px;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
 #hide_text:hover {
-  height: 380px;
+  height: 360px;
   box-shadow: none;
 }
 
+#hide_text:hover:after {
+  display: none;
+}
+
 sup {
-  font: 12px sans-serif;
+  font: 12px Aria, sans-serif;
   color: silver;
 }
+
+.anchor-target {
+  padding-top: 50px;
+}
+
+/*Подписаться*/
+
+/*#eml {*/
+/*  border: 1px solid #269abc;*/
+/*  border-radius: 3px;*/
+/*  text-indent: 5px;*/
+/*}*/

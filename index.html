@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-
+<!-- http://efficiencyparadigm.github.io/ -->
 <head>
 	<title>Парадигма эффективности</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	    <!--<style>
+	        body {
+	        	background: linear-gradient(to left, rgba(59, 149, 239, 0.92) 30%, rgba(217, 149, 40, 0.66) 100%);
+	            background-image: url(images/Gradient-1.jpg);
+	            background-size:auto ;
+	        }
+  	</style>-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="css/dopstyle.css" rel="stylesheet" media="screen">
 	<link href="font_awesome/css/font-awesome.min.css" rel="stylesheet" type="css/text">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -16,7 +26,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll">
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,33 +44,33 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">О нас <span class="sr-only">(current)</span></a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Деловая эффективность</a></li>
-						<li><a href="#">Успешные отношения</a></li>
-						<li><a href="#">Духовное развитие</a></li>
+				<!--<li class="dropdown">-->
+				<!--	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы <span class="caret"></span></a>-->
+				<!--	<ul class="dropdown-menu">-->
+				<!--		<li><a href="#">Деловая эффективность</a></li>-->
+				<!--		<li><a href="#">Успешные отношения</a></li>-->
+				<!--		<li><a href="#">Духовное развитие</a></li>-->
 						<!--<li role="separator" class="divider"></li>-->
 						<!--<li><a href="#">Контакты</a></li>-->
-					</ul>
-				</li>
+				<!--	</ul>-->
+				<!--</li>-->
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсы <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Деловая эффективность</a></li>
-						<li><a href="#">Успешные отношения</a></li>
-						<li><a href="#">Духовное развитие</a></li>
+						<li><a href="#business">Деловая эффективность</a></li>
+						<li><a href="#relation">Успешные отношения</a></li>
+						<li><a href="#soul">Духовное развитие</a></li>
 						<!--<li role="separator" class="divider"></li>-->
 						<!--<li><a href="#">Контакты</a></li>-->
 					</ul>
 				</li>
-				<li><a href="#">Сотрудничество</a></li>
+				<!--<li><a href="#">Сотрудничество</a></li>-->
 				<li><a href="#">Контакты</a></li>
 			</ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <!--<li><a href="#">Контакты</a></li>-->
-			<li><a href="sign_in.html">Вход</a></li>
-			<li><a href="#">Регистрация</a></li>
+			<!--<li><a href="sign_in.html">Вход</a></li>-->
+			<!--<li><a href="#">Регистрация</a></li>-->
 	        <!--<li class="dropdown">-->
 	        <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Личный кабинет <span class="caret"></span></a>-->
 	        <!--  <ul class="dropdown-menu">-->
@@ -90,7 +100,7 @@
 					<img src="images/slider/5r.jpg" alt="...">
 					<div class="carousel-caption">
 						<h1>Деловая эффективность</h1>
-						<p><a class="btn btn-lg btn-slider btn-primary" href="business.html" role="button">Перейти к курсу</a></p>
+						<p><a class="btn btn-lg btn-slider btn-primary" href="#business" role="button">Перейти к курсу</a></p>
 					</div>
 				</div>
 
@@ -98,7 +108,7 @@
 					<img src="images/slider/3r.jpg" alt="...">
 					<div class="carousel-caption">
 						<h1>Успешные отношения</h1>
-						<p><a class="btn btn-lg btn-slider btn-primary" href="relationship.html" role="button">Перейти к курсу</a></p>
+						<p><a class="btn btn-lg btn-slider btn-primary" href="#relation" role="button">Перейти к курсу</a></p>
 					</div>
 				</div>
 				
@@ -106,7 +116,7 @@
 					<img src="images/slider/2.jpg" alt="...">
 					<div class="carousel-caption">
 						<h1>Духовное развитие</h1>
-						<p><a class="btn btn-lg btn-slider btn-primary" href="soul.html" role="button">Перейти к курсу</a></p>
+						<p><a class="btn btn-lg btn-slider btn-primary" href="#soul" role="button">Перейти к курсу</a></p>
 					</div>
 				</div>
 			</div>
@@ -122,7 +132,61 @@
 	</div>
 	
 	<div class="container">
-		<div class="col-sm-8 blog-main">
+		<!--<div class="container"> <!--Новый контейнер, эксперементальный, сверху 3 направления а снизу что такое парадигма эффективности-->
+		<!--	<div class="col-lg-4 col-md-4 col-sm-4">-->
+		<!--		<h1>Деловая эффективность</h1>-->
+		<!--		<p>-->
+		<!--			Не идет в гору свой бизнес и уперлись в потолок успеха на работе?-->
+		<!--			Здесь Вы найдете материалы и курсы по деловому успеху.-->
+		<!--			Амбициозный рост по готовым моделям проектов.-->
+		<!--		</p>-->
+		<!--		<ul>-->
+		<!--			<li>Дадим кейсы по построению готового бизнеса.</li>-->
+		<!--			<li>Поможем в продвижении по работе.</li>-->
+					<!--<li>Личностный рост для Вашего успеха: тайм-менеджмент, мотивация, финансовая часть и многое другое в парадигме делового успеха!</li>-->
+		<!--		</ul>-->
+		<!--		<p><a class="btn btn-info" href="business.html" role="button">Подробнее »</a></p>-->
+		<!--	</div>-->
+			
+		<!--	<div class="col-lg-4 col-md-4 col-sm-4">-->
+		<!--		<h1>Успешные отношения</h1>-->
+		<!--		<p>-->
+		<!--			Вы стесняетесь познакомиться с девушкой?-->
+		<!--			Или уже знакомы, но дальше знакомства дело не идет?-->
+		<!--			А может быть у Вас уже и отношения есть, но в них нет радости, гармонии и счастья?-->
+		<!--		</p> -->
+				<!--<p>В этом блоке мы будем наращивать необходимые личные качества, а также укреплять Ваши отношения.</p>-->
+				
+		<!--		<ul>-->
+		<!--			<li>Улучшим Вашу личную харизму, сексуальность, творческий подход к отношениям, умение радоваться жизни и дарить радость другим.</li>-->
+		<!--			<li>Взглянем на ситуацию в разных направлениях: финансовом, сексуальном, личностном, со стороны психологии женщин и мужчин.</li>-->
+					<!--<li>Укрепим Ваши отношения и социальные связи.</li>-->
+		<!--		</ul>-->
+				<!--<p>Достигайте гармонии и успеха в отношениях вместе с нами!</p>-->
+		<!--		<p><a class="btn btn-info" href="relationship.html" role="button">Подробнее »</a></p>-->
+		<!--	</div>-->
+			
+		<!--	<div class="col-lg-4 col-md-4 col-sm-4">-->
+		<!--		<h1>Духовное развитие</h1>-->
+		<!--		<p>-->
+		<!--			Гармонично развивающаяся личность – духовная личность.-->
+		<!--			Именно дух определяет Вашу сущность.-->
+		<!--			Этот блок поможет Вам больше узнать о себе, сделаться лучше, гармоничней, сильней и счастливей.-->
+		<!--		</p>-->
+				
+		<!--		<ul>-->
+		<!--			<li>Очистка тела и сознания</li>-->
+		<!--			<li>Наращивание личной силы</li>-->
+					<!--<li><!--Раскрытие внутреннего потенциала</li>-->
+					<!--<li>Духовное оздоровление</li>-->
+					<!--<li>И многое другое!</li>-->
+		<!--		</ul>-->
+		<!--		<p><a class="btn btn-info" href="soul.html" role="button">Подробнее »</a></p>-->
+		<!--	</div>-->
+		<!--</div>-->
+		<!--Конец блока с 3 нарпавлениями-->
+		
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<!--Пожалуйста, оставьте запятую в живых ;) -->
@@ -147,24 +211,26 @@
 				</div>
 			</div>
 		
-			<div class="row">
+			<div id="business" class="row anchor-target">
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<h1>Деловая эффективность</h1>
-					<p>
-						Не идет в гору свой бизнес и уперлись в потолок успеха на работе?
-						Здесь Вы найдете материалы и курсы по деловому успеху.
-						Амбициозный рост по готовым моделям проектов.
+					<p >
+						<h1>Деловая эффективность</h1>
+						<p>
+							Не идет в гору свой бизнес и уперлись в потолок успеха на работе?
+							Здесь Вы найдете материалы и курсы по деловому успеху.
+							Амбициозный рост по готовым моделям проектов.
+						</p>
+						<ul>
+							<li>Дадим кейсы по построению готового бизнеса.</li>
+							<li>Поможем в продвижении по работе.</li>
+							<li>Личностный рост для Вашего успеха: тайм-менеджмент, мотивация, финансовая часть и многое другое в парадигме делового успеха!</li>
+						</ul>
+						<p><a class="btn btn-info" href="#sign-up" role="button">Подробнее »</a></p>
 					</p>
-					<ul>
-						<li>Дадим кейсы по построению готового бизнеса.</li>
-						<li>Поможем в продвижении по работе.</li>
-						<li>Личностный рост для Вашего успеха: тайм-менеджмент, мотивация, финансовая часть и многое другое в парадигме делового успеха!</li>
-					</ul>
-					<p><a class="btn btn-info" href="business.html" role="button">Подробне »</a></p>
 				</div>
 			</div>
 		
-			<div class="row">
+			<div id="relation" class="row anchor-target">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h1>Успешные отношения</h1>
 					<p>
@@ -178,11 +244,11 @@
 						<li>Укрепим Ваши отношения и социальные связи.</li>
 					</ul>
 					<p>Достигайте гармонии и успеха в отношениях вместе с нами!</p>
-					<p><a class="btn btn-info" href="relationship.html" role="button">Подробнее »</a></p>
+					<p><a class="btn btn-info" href="#sign-up" role="button">Подробнее »</a></p>
 				</div>
 			</div>
 		
-			<div class="row">
+			<div id="soul" class="row anchor-target">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h1>Духовное развитие</h1>
 					<p>
@@ -197,117 +263,227 @@
 						<li>Духовное оздоровление</li>
 						<li>И многое другое!</li>
 					</ul>
-					<p><a class="btn btn-info" href="soul.html" role="button">Подробнее »</a></p>
+					<p><a class="btn btn-info" href="#sign-up" role="button">Подробнее »</a></p>
 				</div>
 			</div>
 		</div>
+
+		<!--Sidebar справа-->
 	
-		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-			<div class="sidebar-module sidebar-module-inset">
-				<h2><em>Акции</em></h2>
-				<p>Мешок сахара в подарок и картошки кило</p>
+		<!--<div class="col-sm-3 col-sm-offset-1 blog-sidebar">-->
+		<!--	<div class="sidebar-module sidebar-module-inset">-->
+		<!--		<h2><em>Акции</em></h2>-->
+		<!--		<p>Мешок сахара в подарок и картошки кило</p>-->
 			<!--<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>-->
-			</div>
-			<div class="sidebar-module"><!--Эксперементальный, с использлванием :hover-->
-				<h2>Новости<sup>эксперементальная</sup></h2>
-				<ol id="news">
-					<li>ФРС США повысила ключевую ставку впервые за семь лет</li>
-					<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>
-					<li>Саакашвили ответил на опубликованное Аваковым видео с летящим стаканом<!--Скрытый текст -->
-						<a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Старые</a>	
-					</li>
-					<li id="el1" class="panel-collapse collapse">Опубликовал запись перепалки с Саакашвили</li>
-				</ol>
-			</div>
-			<div class="sidebar-module" id="hide_text">
-				<h2>Новости<sup>эксперемeнтальная</sup></h2>
-				<ol id="news">
-					<li>ФРС США повысила ключевую ставку впервые за семь лет</li>
-					<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>
-					<li>Саакашвили ответил на опубликованное Аваковым видео с летящим стаканом<!--Скрытый текст --></li>
-					<li>ФРС США повысила ключевую ставку впервые за семь лет</li>
-					<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>
-					<li>ФРС США повысила ключевую ставку впервые за семь лет</li>
-					<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>
-				</ol>
-			</div>
+		<!--	</div>-->
+		<!--	<div class="sidebar-module"><!--Эксперементальный, с использлванием :hover-->
+		<!--		<h2>Новости<sup>эксперементальная</sup></h2>-->
+		<!--		<ol> <!--class="news"-->
+		<!--			<li>ФРС США повысила ключевую ставку впервые за семь лет</li>-->
+		<!--			<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>-->
+		<!--			<li>Саакашвили ответил на опубликованное Аваковым видео с летящим стаканом<!--Скрытый текст -->
+		<!--				<a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Старые</a>	-->
+		<!--			</li>-->
+		<!--			<li id="el1" class="panel-collapse collapse">Опубликовал запись перепалки с Саакашвили</li>-->
+		<!--		</ol>-->
+		<!--	</div>-->
+		<!--	<div class="sidebar-module" id="hide_text">-->
+		<!--		<h2>Новости<sup>эксперемeнтальная</sup></h2>-->
+		<!--		<ol> <!--class="news"-->
+		<!--			<li>ФРС США повысила ключевую ставку впервые за семь лет</li>-->
+		<!--			<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>-->
+		<!--			<li>Саакашвили ответил на опубликованное Аваковым видео с летящим стаканом<!--Скрытый текст </li>-->
+		<!--			<li>ФРС США повысила ключевую ставку впервые за семь лет</li>-->
+		<!--			<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>-->
+		<!--			<li>ФРС США повысила ключевую ставку впервые за семь лет</li>-->
+		<!--			<li>Ни дня без убийства. Центр Москвы вернулся в лихие 90-е</li>-->
+		<!--		</ol>-->
+		<!--	</div>-->
 			
-			<div class="sidebar-module sidebar-module-inset">
-				<h2>Подписаться на новости</h2>
+		<!--	<div class="sidebar-module sidebar-module-inset">-->
+		<!--		<h2>Подписаться на новости</h2>-->
 				<!-- <p><a class="btn btn-info" href="registration.html" role="button">Подписаться</a></p>-->
 				<!-- <button class="btn btn-default" type="submit">Подписаться</button>-->
-				<input type="text" placeholder="Email"><input type="submit">
-			</div>
-		</div>
+				
+				<!--<form action="" method="">-->
+				<!--	<input type="email" placeholder="Email">-->
+				<!--	<input type="submit" class="btn btn-primary btn-sm" value="Жми">-->
+				<!--</form>-->
+				
+		<!--		<form id="subscribe-form" action="https://para-effect.bitrix24.ru/crm/configs/import/lead.php" method="post">-->
+		<!--	        <input type="hidden" name="AUTH" value="a65921da7339a7411f3997df8609a94d" />-->
+		<!--	        <input type="hidden" name="TITLE" value="API" />-->
+			        <!--Адрес электронной почты:-->
+		<!--	        <input type="text" name="EMAIL_OTHER" value="" placeholder="email" />-->
+		<!--	        <input type="submit" class="btn btn-primary btn-sm" value="Жми">-->
+		<!--	    </form>-->
+		<!--	    <script type="text/javascript">-->
+		<!--	        $('input[name="EMAIL_OTHER"]').keypress(function(e) {-->
+		<!--	            if (e.which == 13) {-->
+		<!--	                var form = $('#subscribe-form');-->
+		<!--	                $.ajax({-->
+		<!--	                    data: form.serialize(),-->
+		<!--	                    type: form.attr('method'),-->
+		<!--	                    url: form.attr('action'),-->
+		<!--	                    error: function(xhr, desc, err) {-->
+		<!--	                        var result = JSON.parse(xhr.responseText.replace(/'/g, '"'));-->
+		<!--	                        window.location.href = result.error == "201" ? "form4.1.html" : "form4.0.html";-->
+		<!--	                    }-->
+		<!--	                });-->
+		<!--	                return false;-->
+		<!--	            }-->
+		<!--	        });-->
+		<!--	    </script>-->
+				
+		<!--	</div>-->
+		<!--</div>-->
 	</div>
 
 	<div class="container">
-		<div class="jumbotron sign-up">
+		<div id="sign-up" class="jumbotron sign-up">
 		  <h2>Вы готовы к переменам? Вы готовы изменить свою жизнь?</h2>
 		  <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Да, записаться</a></p>-->
-		  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Click me</button> <!-- Модальное окно, начало-->
+		  <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Click me</button>  Модальное окно, начало-->
+		  
+		  <script type="text/javascript">
+		  	
+		  	function showError()
+		  	{
+		  		//alert("Произошла ошибка! Пожалуйста, попробуйте позднее или свяжитесь со службой поддержки.");
+            	$("#subscribe-result-text").text("Произошла ошибка! Пожалуйста, попробуйте позднее или свяжитесь со службой поддержки.");
+            	$("#subscribe-result-modal").modal();
+		  	}
+		  	
+		  	function sendSubscribeForm()
+	  		{
+	  			var form = $('#subscribe-form');
+	            $.ajax({
+	                data: form.serialize(),
+	                type: form.attr('method'),
+	                url: form.attr('action'),
+	                error: function(xhr, desc, err) {
+	                	
+	                	$('input[name="EMAIL_OTHER"]').val('');
+	                	
+	                	try {
+	                		var result = JSON.parse(xhr.responseText.replace(/'/g, '"'));
+
+		                    if (result.error == "201")
+		                    {
+		                    	//alert("Благодарим за подписку!");
+		                    	$("#subscribe-result-text").text("Благодарим за подписку!");
+		                    	$("#subscribe-result-modal").modal();
+		                    }
+		                    else
+		                    {
+		                    	showError();
+		                    }
+	                	}
+	                	catch (error)
+	                	{
+	                    	showError();
+	                	}
+	                }
+	            });
+	            return false;
+	  		}
+		  	
+		  	(function() {
+		  		
+		  		$(function() {
+			  		
+			  		$('input[name="EMAIL_OTHER"]').keypress(function(e) {
+				        if (e.which == 13) {
+				            sendSubscribeForm();
+				            
+				        	return false;
+				        }
+				    });
+			  		
+			  	});
+		  	
+		  	})();
+		    
+		  </script>
+		  
+		  <form id="subscribe-form" action="https://para-effect.bitrix24.ru/crm/configs/import/lead.php" method="post">
+		    <input type="hidden" name="AUTH" value="a65921da7339a7411f3997df8609a94d" />
+		    <input type="hidden" name="TITLE" value="API" />
+		    <!--Адрес электронной почты:-->
+		    <input type="text" name="EMAIL_OTHER" value="" placeholder="адрес электронной почты" />
+		    <button type="button" class="btn btn-primary btn-lg" onclick="sendSubscribeForm(); return false;">Подписаться</button>
+		  </form>
+		  
+		  
+		  <div id="subscribe-result-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-sm">
+			    <div id="subscribe-result-text" class="modal-content">
+			      ...
+			    </div>
+			  </div>
+			</div>
 		  
 			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">Что Вас больше всего интересует?</h4>
-						</div>
-						<div class="modal-body">
-							<div class="container">
-								<div class="col-lg-4">Бизнес</div>
-								<div class="col-lg-4">Отношения</div>
-								<div class="col-lg-4">Эзотерика</div>
-							</div>
-						</div>
-						<div class="modal-footer">
+			<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+			<!--	<div class="modal-dialog" role="document">-->
+			<!--		<div class="modal-content">-->
+			<!--			<div class="modal-header">-->
+			<!--				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+			<!--				<h4 class="modal-title" id="myModalLabel">Что Вас больше всего интересует?</h4>-->
+			<!--			</div>-->
+			<!--			<div class="modal-body">-->
+			<!--				<div class="container">-->
+			<!--					<div class="col-lg-4">Бизнес</div>-->
+			<!--					<div class="col-lg-4">Отношения</div>-->
+			<!--					<div class="col-lg-4">Эзотерика</div>-->
+			<!--				</div>-->
+			<!--			</div>-->
+			<!--			<div class="modal-footer">-->
 							<!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div> <!-- Модальное окно, конец-->
+			<!--				<button type="button" class="btn btn-primary">Save changes</button>-->
+			<!--			</div>-->
+			<!--		</div>-->
+			<!--	</div>-->
+			<!--</div> <!-- Модальное окно, конец-->
 		</div>
 		
 		<div class="row">
 			<div class="text-center">
 				<h1>Мы в социальных сетях</h1> <!-- Мы всюду -->
-				<a class="btn btn-social-icon btn-vk">
+				<a class="btn btn-social-icon btn-vk" href="https://vk.com/paraeffect">
 			    	<span class="fa fa-vk"></span>
 			  	</a>
-				<a class="btn btn-social-icon btn-google">
-			    	<span class="fa fa-google"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-facebook">
-			    	<span class="fa fa-facebook"></span>
-			  	</a>
-				<a class="btn btn-social-icon btn-twitter">
-			    	<span class="fa fa-twitter"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-instagram">
-			    	<span class="fa fa-instagram"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-youtube">
-			    	<span class="fa fa-youtube"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-vimeo">
-			    	<span class="fa fa-vimeo"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-linkedin">
-			    	<span class="fa fa-linkedin"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-odnoklassniki">
-			    	<span class="fa fa-odnoklassniki"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-yahoo">
-			    	<span class="fa fa-yahoo"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-reddit">
-			    	<span class="fa fa-reddit"></span>
-			  	</a>
-			  	<a class="btn btn-social-icon btn-github">
+				<!--<a class="btn btn-social-icon btn-google">-->
+			 <!--   	<span class="fa fa-google"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-facebook">-->
+			 <!--   	<span class="fa fa-facebook"></span>-->
+			 <!-- 	</a>-->
+				<!--<a class="btn btn-social-icon btn-twitter">-->
+			 <!--   	<span class="fa fa-twitter"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-instagram">-->
+			 <!--   	<span class="fa fa-instagram"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-youtube">-->
+			 <!--   	<span class="fa fa-youtube"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-vimeo">-->
+			 <!--   	<span class="fa fa-vimeo"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-linkedin">-->
+			 <!--   	<span class="fa fa-linkedin"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-odnoklassniki">-->
+			 <!--   	<span class="fa fa-odnoklassniki"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-yahoo">-->
+			 <!--   	<span class="fa fa-yahoo"></span>-->
+			 <!-- 	</a>-->
+			 <!-- 	<a class="btn btn-social-icon btn-reddit">-->
+			 <!--   	<span class="fa fa-reddit"></span>-->
+			 <!-- 	</a>-->
+			  	<a class="btn btn-social-icon btn-github" href="https://github.com/EfficiencyParadigm">
 			    	<span class="fa fa-github"></span>
 			  	</a>
 			</div>
@@ -321,12 +497,12 @@
 	</div>
 
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	
+	<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
-<!--http://efficiencyparadigm.github.io/-->
 </html>
 
 
