@@ -18,7 +18,7 @@ title: Парадигма эффективности
 				<img src="images/slider/5r.jpg" alt="...">
 				<div class="carousel-caption">
 					<h1>Деловая эффективность</h1>
-					<p><a class="btn btn-lg btn-slider btn-primary" href="#business" role="button">Перейти к курсу</a></p>
+					<p><a class="btn btn-lg btn-slider btn-primary" href="/courses/business.html" role="button">Перейти к курсу</a></p>
 				</div>
 			</div>
 
@@ -26,7 +26,7 @@ title: Парадигма эффективности
 				<img src="images/slider/3r.jpg" alt="...">
 				<div class="carousel-caption">
 					<h1>Успешные отношения</h1>
-					<p><a class="btn btn-lg btn-slider btn-primary" href="#relation" role="button">Перейти к курсу</a></p>
+					<p><a class="btn btn-lg btn-slider btn-primary" href="/courses/relationships.html" role="button">Перейти к курсу</a></p>
 				</div>
 			</div>
 
@@ -34,7 +34,7 @@ title: Парадигма эффективности
 				<img src="images/slider/2.jpg" alt="...">
 				<div class="carousel-caption">
 					<h1>Духовное развитие</h1>
-					<p><a class="btn btn-lg btn-slider btn-primary" href="#soul" role="button">Перейти к курсу</a></p>
+					<p><a class="btn btn-lg btn-slider btn-primary" href="/courses/soul.html" role="button">Перейти к курсу</a></p>
 				</div>
 			</div>
 		</div>
@@ -82,7 +82,7 @@ title: Парадигма эффективности
 						<li>Поможем в продвижении по работе.</li>
 						<li>Личностный рост для Вашего успеха: тайм-менеджмент, мотивация, финансовая часть и многое другое в парадигме делового успеха!</li>
 					</ul>
-					<p><a class="btn btn-info" href="#sign-up" role="button">Подробнее »</a></p>
+					<p><a class="btn btn-info" href="/courses/business.html" role="button">Подробнее »</a></p>
 				</p>
 			</div>
 		</div>
@@ -101,7 +101,7 @@ title: Парадигма эффективности
 					<li>Укрепим Ваши отношения и социальные связи.</li>
 				</ul>
 				<p>Достигайте гармонии и успеха в отношениях вместе с нами!</p>
-				<p><a class="btn btn-info" href="#sign-up" role="button">Подробнее »</a></p>
+				<p><a class="btn btn-info" href="/courses/relationships.html" role="button">Подробнее »</a></p>
 			</div>
 		</div>
 
@@ -118,82 +118,7 @@ title: Парадигма эффективности
 					<li>Духовное оздоровление</li>
 					<li>И многое другое!</li>
 				</ul>
-				<p><a class="btn btn-info" href="#sign-up" role="button">Подробнее »</a></p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<div id="sign-up" class="jumbotron sign-up">
-		<h2>Вы готовы к переменам? Вы готовы изменить свою жизнь?</h2>
-
-		<script type="text/javascript">
-			function showError() {
-				$("#subscribe-result-text").text("Произошла ошибка! Пожалуйста, попробуйте позднее или свяжитесь со службой поддержки.");
-				$("#subscribe-result-modal").modal();
-			}
-
-			function sendSubscribeForm() {
-				var form = $('#subscribe-form');
-				$.ajax({
-					data: form.serialize(),
-					type: form.attr('method'),
-					url: form.attr('action'),
-					error: function(xhr, desc, err) {
-
-						$('input[name="EMAIL_OTHER"]').val('');
-
-						try {
-							var result = JSON.parse(xhr.responseText.replace(/'/g, '"'));
-
-							if (result.error == "201") {
-								$("#subscribe-result-text").text("Благодарим за подписку!");
-								$("#subscribe-result-modal").modal();
-							}
-							else {
-								showError();
-							}
-						}
-						catch (error) {
-							showError();
-						}
-					}
-				});
-				return false;
-			}
-
-			(function() {
-
-				$(function() {
-
-					$('input[name="EMAIL_OTHER"]').keypress(function(e) {
-						if (e.which == 13) {
-							sendSubscribeForm();
-
-							return false;
-						}
-					});
-
-				});
-
-			})();
-		</script>
-
-		<form id="subscribe-form" action="https://para-effect.bitrix24.ru/crm/configs/import/lead.php" method="post">
-			<input type="hidden" name="AUTH" value="a65921da7339a7411f3997df8609a94d" />
-			<input type="hidden" name="TITLE" value="API" />
-			<!--Адрес электронной почты:-->
-			<input type="text" name="EMAIL_OTHER" value="" placeholder="адрес электронной почты" />
-			<button type="button" class="btn btn-primary btn-lg" onclick="sendSubscribeForm(); return false;">Подписаться</button>
-		</form>
-
-
-		<div id="subscribe-result-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-sm">
-				<div id="subscribe-result-text" class="modal-content">
-					...
-				</div>
+				<p><a class="btn btn-info" href="/courses/soul.html" role="button">Подробнее »</a></p>
 			</div>
 		</div>
 	</div>
