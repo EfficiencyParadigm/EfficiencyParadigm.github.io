@@ -67,7 +67,7 @@
 }
 
 .btn-lg {
-  border-radius: 50px;
+  border-radius: 15px;
 }
 
 /* Это для кнопки в слайдере */
@@ -136,10 +136,21 @@ sup {
   padding-top: 50px;
 }
 
-/*Подписаться*/
+input[name="EMAIL_OTHER"]{
+  font-size: 16pt;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+}
 
-/*#eml {*/
-/*  border: 1px solid #269abc;*/
-/*  border-radius: 3px;*/
-/*  text-indent: 5px;*/
+/*#sign-up {*/
+/*  position: relative;*/
+/*}*/
+
+/*button[type="button"] {*/
+/*  position: absolute;*/
+/*  right: 32%;*/
+/*}*/
+
+/*::-webkit-input-placeholder {*/
+/*  font-size: 12pt;*/
 /*}*/
