@@ -1,0 +1,18 @@
+---
+layout: page
+title: Пример записи из VK
+posts:
+  - id: 11
+    key: UxWtiha-JDwK9QLBbzZHlJbkHw
+  - id: 9
+    key: H4HMTmfM2_orxeRAXTOt1V4jOg
+  - id: 8
+    key: jayw5fc6elr2aqvf2Iuxqu8spA
+---
+
+{% for post in page.posts %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div id="vk_post_-107971459_{{ post.id }}" class="text-center"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?121"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_-107971459_{{ post.id }}", -107971459, {{ post.id }}, '{{ post.key }}', {width: 500})) setTimeout(arguments.callee, 50);  }());</script>
+    </div>
+{% endfor %}
+
