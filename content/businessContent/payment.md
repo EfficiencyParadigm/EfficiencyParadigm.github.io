@@ -3,7 +3,7 @@ layout: page
 title: Деловая эффективность duplicate
 ---
 
-#Эффективный метод оплаты менеджеров продаж
+# Эффективный метод оплаты менеджеров продаж
 
 <img src="/content/businessContent/payment.jpg" alt="alt text" class="pull-left" title="Title" width="400" />
 
