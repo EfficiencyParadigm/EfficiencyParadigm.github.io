@@ -2,7 +2,7 @@
 layout: page
 title: Деловая эффективность duplicate
 ---
-#Основы продаж по телефону – часть 1
+# Основы продаж по телефону – часть 1
 
 <img src="/content/businessContent/telesales1.jpeg" alt="alt text" class="pull-left" title="Title" width="500" />
 
