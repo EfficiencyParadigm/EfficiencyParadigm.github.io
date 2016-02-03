@@ -3,7 +3,7 @@ layout: page
 title: Деловая эффективность
 ---
 
-#Основы продаж по телефону – часть 2. Полезные рекомендации
+# Основы продаж по телефону – часть 2. Полезные рекомендации
 
 <img src="/content/businessContent/telesales2.jpg" alt="alt text" class="pull-right" title="Title" width="400" />
 
