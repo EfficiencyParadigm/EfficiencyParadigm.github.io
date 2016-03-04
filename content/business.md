@@ -7,3 +7,4 @@ title: Деловая эффективность
 * [Основы продаж по телефону – часть 1](/content/businessContent/telesales1.html)
 * [Основы продаж по телефону – часть 2](/content/businessContent/telesales2.html)
 * [Эффективный метод оплаты менеджеров продаж](/content/businessContent/payment.html)
+* [Тестовая страница 1](/content/businessContent/testpage.html)
