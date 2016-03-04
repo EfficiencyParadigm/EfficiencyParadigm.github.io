@@ -14,6 +14,8 @@ title: Просто тестовая страница
 
 https://github.com/EfficiencyParadigm/EfficiencyParadigm.github.io/blob/master/content/businessContent/telesales1.jpeg
 
+
+
 Это просто тестовая страница от Герцога для тренировки.
 
 *Выделяю текст курсивом* тратата
