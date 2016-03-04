@@ -12,9 +12,7 @@ title: Просто тестовая страница
 ####  А это заголовок внезапно сразу четвертого уровня!
 
 
-https://github.com/EfficiencyParadigm/EfficiencyParadigm.github.io/blob/master/content/businessContent/telesales1.jpeg
-
-
+<img src="/content/businessContent/telesales1.jpeg" alt="alt text" class="pull-left" title="Title" width="500" />
 
 Это просто тестовая страница от Герцога для тренировки.
 
