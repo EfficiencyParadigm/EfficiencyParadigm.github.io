@@ -1,4 +1,8 @@
 ---
 layout: page
-title: Деловая эффективность
+title: Духовное развитие
 ---
+
+# Статьи по духовному развитию
+
+* [Медитация на самого себя](/content/businessContent/meditation.md)
