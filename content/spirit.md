@@ -5,4 +5,4 @@ title: Духовное развитие
 
 # Статьи по духовному развитию
 
-* [Медитация на самого себя](/content/businessContent/meditation.md)
+* [Медитация на самого себя](/content/businessContent/meditation.html)
