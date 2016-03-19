@@ -3,7 +3,7 @@ layout: page
 title: Духовное развитие duplicate
 ---
 
-# Принцип реализации себя
+# 5 ступеней к успеху
 
 <img src="/images/slider/ПРН.jpg" alt="духовное развитие" class="pull-left" title="Title" width="400" />
 
