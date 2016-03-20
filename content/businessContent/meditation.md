@@ -5,7 +5,7 @@ title: Духовное развитие duplicate
 # Медитация на самого себя
 
 <img src="/images/slider/default.jpg" alt="alt text" class="pull-left" title="Title" width="400" />
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://soundcloud.com/marcelo-marin/chakra-meditation-music-the-heart-of-reiki"></iframe>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2275316&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 Данная медитация позволяет избавиться от стресса, сбалансировать внутреннее состояние, поможет разобраться в себе и окружающем нас мире.
 Вариант, который я предлагаю, не обязательно выполнять в точно таком же виде, если вы от чего-то отойдете, ничего страшного. Напротив, со временем вы должны будете подстроить эту технику под себя. 
 Итак, начнем.
