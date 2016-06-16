@@ -1,9 +1,0 @@
----
-layout: page
-title: Духовное развитие
----
-
-# Статьи по духовному развитию
-
-* [Медитация на самого себя](/content/businessContent/meditation.html)
-* [Принцип реализации намерения](/content/principle.html)
